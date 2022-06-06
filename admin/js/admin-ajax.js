@@ -12,14 +12,14 @@ $(document).ready(function(){
             dataType: 'json',
             success: function(data){
                 var resultado = data;
-                if(resultado.respuesta === 'exito'){
-                    Swal(
+                if(resultado.respuesta == 'exito'){
+                    swal(
                         'Correcto!',
                         'El administrador se creo correctamente',
                         'success'
                       )
                 }else{
-                    Swal(
+                    swal(
                         'Error',
                         'Hubo un error',
                         'error'
@@ -42,14 +42,17 @@ $(document).ready(function(){
             dataType: 'json',
             success: function(data){
                 var resultado = data;
-                if(resultado.respuesta === 'exitoso'){
-                    Swal(
+                if(resultado.respuesta == 'exitoso'){
+                    swal(
                         'Login Correcto!',
                         'Bienvenid@'+resultado.usuario+ ' !! ',
                         'success'
                       )
+                      setTimeout(function(){
+                        window.location.href = 'admin-area.php';
+                      }, 2000);
                 }else{
-                    Swal(
+                    swal(
                         'Error',
                         'Usuario o Password Incorrectos',
                         'error'
