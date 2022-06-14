@@ -68,7 +68,7 @@
                      
 
                       <td>
-                      <a href="editar-evento.php?id=<?php echo $eventos['evento_id']; ?>" class="btn bg-orange btn-flat margin">
+                      <a href="editar-evento.php?id=<?php echo $eventos['evento_id'] ?>" class="btn bg-orange btn-flat margin">
                       <i class="fa fa-pencil"></i>
                       </a>
                       <a href="#" data-id="<?php echo $eventos['evento_id']; ?>" data-tipo="evento" class="btn bg-maroon bnt-flat margin borrar_registro">

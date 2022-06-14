@@ -33,13 +33,19 @@ $(document).ready(function () {
         $('#resultado_password').text('Correcto');
         $('#resultado_password').parents('.form-group').addClass('has-success').removeClass('has-error');
         $('input#password').parents('.form-group').addClass('has-success').removeClass('has-error');
-        $('#crear_registro').attr('disabled', false);
+        $('#crear_registro_admin').attr('disabled', false);
       } else {
         $('#resultado_password').text('No son iguales!');
         $('#resultado_password').parents('.form-group').addClass('has-error').removeClass('has-success');
         $('input#password').parents('.form-group').addClass('has-error').removeClass('has-success');
       }
     });
+
+    // Date picker
+    // Asi estaba en el video
+    //$('#fecha').datepicker({
+    //  autoclose: true
+    //});
 
     $('#datepicker').datepicker({
       autoclose: true
@@ -50,5 +56,7 @@ $(document).ready(function () {
     $('.timepicker').timepicker({
       showInputs: false,
     });
+
+    $('#icono').iconpicker();
 
   }) //final

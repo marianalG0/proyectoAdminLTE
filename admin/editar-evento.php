@@ -155,7 +155,7 @@ else:
                             <div class="box-footer"> <!-- Parte modificada por ASCC video16folfer80 min9//solo que el value y el name son diferentes, no se en que momento quedaron asi, yo los modificaré, espero no pase nada malo -->
                               <input type="hidden" name="registro" value="actualizar">
                               <input type="hidden" name="id_registro" value="<?php echo $id; ?>">
-                                <button type="submit" class="btn btn-primary">Añadir</button> 
+                                <button type="submit" class="btn btn-primary">Guardar</button> 
                             </div>
                         </form>
 

@@ -34,4 +34,4 @@ $('#login-admin').on('submit', function(e){
     })
 });
 
-});w
+});

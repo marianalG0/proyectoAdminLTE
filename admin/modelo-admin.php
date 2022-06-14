@@ -25,7 +25,7 @@
 
             }else{
                 $respuesta = array(
-                    'respuesta' => 'error',
+                    'respuesta' => 'error'
 
                 );
             }
