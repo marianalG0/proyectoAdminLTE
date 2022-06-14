@@ -16,6 +16,11 @@
   <!-- DataTables -->
   <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
 
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/timepicker.css">
+  <link rel="stylesheet" href="css/datepicker">
+  
+
   <!-- Theme style -->
   <link rel="stylesheet" href="css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
