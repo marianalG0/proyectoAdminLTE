@@ -11,8 +11,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Crear Administrador
-            <small>Llena el formulario para crear un administrador</small>
+            Crear Invitados
+            <small>Llena el formulario para añadir un invitado</small>
         </h1>
     </section>
 
@@ -24,38 +24,38 @@
                 <!-- Default box -->
                 <div class="box">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Crear Administrador</h3>
+                        <h3 class="box-title">Crear Invitado</h3>
 
                     </div>
                     <div class="box-body">
                         <!-- form start -->
-                        <form role="form" name="guardar-registro" id="guardar-registro" method="post" action="modelo-admin.php">
+                        <form role="form" name="guardar-registro" id="guardar-registro-archivo" method="post" action="modelo-invitado.php" enctype="multipart/form-data">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="usuario">Usuario:</label>
-                                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario">
+                                    <label for="nombre_invitado">Nombre:</label>
+                                    <input type="text" class="form-control" id="nombre_invitado" name="nombre_invitado" placeholder="Nombre">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nombre">Nombre:</label>
-                                    <input type="text" class="form-control" id="nombre"
-                                    name="nombre" placeholder="Tu Nombre Completo">
+                                    <label for="apellido_invitado">Apellido:</label>
+                                    <input type="text" class="form-control" id="apellido_invitado" name="apellido_invitado" placeholder="Apellido">
                                 </div>
                                 <div class="form-group">
-                                    <label for="password">Password: </label>
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password Para Iniciar Sesión">
+                                    <label for="biografia_invitado">Biografia:</label>
+                                    <textarea class="form-control" id="biografia_invitado" name="biografia_invitado" rows="8" placeholder="Biografia"></textarea>
                                 </div>
+                                <div class="form-group">
+                                    <label for="imagen_invitado">Imagen:</label>
+                                    <input type="file" id="imagen_invitado" name="archivo_imagen">
+                        
+                                    <p class="help-block">Añada la imagen del invitado aqui</p>
+                                 </div>
 
-                                <div class="form-group">
-                                    <label for="password">Repetir Password: </label>
-                                    <input type="password" class="form-control" id="repetir_password" name="repetir_password" placeholder="Password Para Iniciar Sesión">
-                                    <span id="resultado_password" class="help-block"></span>
-                                </div>
                             </div>
                             <!-- /.box-body -->
 
                             <div class="box-footer">
                               <input type="hidden" name="registro" value="nuevo">
-                                <button type="submit" class="btn btn-primary" id="crear_registro_admin">Añadir</button>
+                                <button type="submit" class="btn btn-primary" id="crear_registro">Añadir</button>
                             </div>
                         </form>
 

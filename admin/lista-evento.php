@@ -66,6 +66,7 @@ try {
                       <td> <?php echo $eventos['cat_evento']; ?></td>
                       <td> <?php echo $eventos['nombre_invitado'] . " " . $eventos['apellido_invitado']; ?></td>
                       <td>
+
                         <a href="editar-evento.php?id=<?php echo $eventos['evento_id'];  ?>" class="btn bg-orange btn-flat margin">
                           <i class="fa fa-pencil"></i>
                         </a>
@@ -81,6 +82,7 @@ try {
                 <?php       ?>
               </tbody>
               <tfoot>
+
                 <tr>
                   <th>Nombre</th>
                   <th>Fecha</th>

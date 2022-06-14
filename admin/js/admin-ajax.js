@@ -30,6 +30,43 @@ $(document).ready(function(){
         })
     });
 
+    // Se ejecuta cuando hay un archivo
+        $('#guardar-registro-archivo').on('submit', function(e){
+            e.preventDefault();
+    
+            var datos = new FormData(this);
+    
+            //Creamos el llamado ajax
+            $.ajax({
+                type: $(this).attr('method'),
+                data: datos,
+                url: $(this).attr('action'),
+                dataType: 'json',
+                contentType: false,
+                processData: false,
+                async: true,
+                cache: false,
+                success: function(data){
+                    console.log(data);
+                    var resultado = data;
+                    if(resultado.respuesta == 'exito'){
+                        swal(
+                            'Correcto!',
+                            'Se guardó correctamente',
+                            'success'
+                          )
+                    }else{
+                        swal(
+                            'Error',
+                            'Hubo un error',
+                            'error'
+                          )
+                    }
+                }
+            })
+        });
+    
+
     // NC Eliminar un registro de admins
 
     $('.borrar_registro').on('click', function(e){
@@ -56,6 +93,7 @@ $(document).ready(function(){
                 },
                 url: 'modelo-'+tipo+'.php',
                 success: function(data){
+                    console.log(data);
                     var resultado = JSON.parse(data);
                     if(resultado.respuesta == 'exito'){
                         swal(
