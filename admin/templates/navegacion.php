@@ -32,7 +32,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard</a></li>
+            <li><a href="dashboard.php"><i class="fa fa-circle-o"></i> Dashboard</a></li>
       
           </ul>
         </li>
@@ -74,8 +74,8 @@
             <span>Registrados</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i> Ver Todos</a></li>
-            <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>Agregar</a></li>
+            <li><a href="lista-registrados.php"><i class="fa fa-list-ul" aria-hidden="true"></i> Ver Todos</a></li>
+            <li><a href="crear-registro.php"><i class="fa fa-plus-circle" aria-hidden="true"></i>Agregar</a></li>
           </ul>
         </li>
 

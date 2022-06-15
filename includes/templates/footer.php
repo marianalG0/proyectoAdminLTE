@@ -9,12 +9,8 @@
         </div>
         <div class="ultimos-tweets">
             <h3>Últimos<span>tweets</span></h3>
-            <ul>
-                <li>Lorem ipsum dolor sit amet. #Pellentesque nec @justo non est elefiend pulvigar</li>
-                <li>Lorem ipsum dolor sit amet. #Pellentesque nec @justo non est elefiend pulvigar</li>
-                <li>Lorem ipsum dolor sit amet. #Pellentesque nec @justo non est elefiend pulvigar</li>
-
-            </ul>
+                <a class="twitter-timeline" data-height="400" data-theme="light" href="https://twitter.com/gdlwebcampAMME?ref_src=twsrc%5Etfw">Tweets by gdlwebcampAMME</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+           
         </div>
         <div class="menu">
             <h3>Redes<span>Sociales</span></h3>
@@ -134,6 +130,7 @@ window.jQuery ||
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
 <script src="js/main.js"></script>
+<script src="js/cotizador.js"></script>
 
 
 

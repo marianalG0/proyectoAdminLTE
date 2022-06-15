@@ -54,7 +54,7 @@
                  
 
                  <tr>
-                    <td><?php echo $invitado['nombre_invitado'] . " " . $invitado['apellido_invitado']; ?><td/>
+                    <td><?php echo $invitado['nombre_invitado'] . " " . $invitado['apellido_invitado']; ?></td>
                     <td><?php echo $invitado['descripcion']; ?></td>
                     <td><img src="../img/invitados/<?php echo $invitado['url_imagen']; ?>" width="150"></td>
                     <td>
