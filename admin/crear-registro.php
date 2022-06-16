@@ -29,7 +29,7 @@ include_once 'templates/navegacion.php';
                     </div>
                     <div class="box-body">
                         <!-- form start -->
-                        <form role="form" name="guardar-registro" id="guardar-registro" method="post" action="modelo-registrado.php">
+                        <form role="form" name="guardar-registro" id="guardar-registro" method="POST" action="modelo-registrado.php">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="nombre_registrado">Nombre:</label>

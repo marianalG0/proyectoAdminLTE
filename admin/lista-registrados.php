@@ -68,7 +68,8 @@ include_once 'templates/navegacion.php';
                                             }else{
                                                 echo '<span class="badge bg-red">No Pagado</span>';
                                             }
-                                        ?></td>
+                                        ?>
+                                        </td>
                                         <td><?php echo $registrado['email_registrado']; ?></td>
                                         <td><?php echo $registrado['fecha_registro']; ?></td>
                                         <td>
@@ -78,8 +79,8 @@ include_once 'templates/navegacion.php';
                                                 'un_dia' => 'Pase 1 día',
                                                 'pase_2dias' => 'Pase 2 días',
                                                 'pase_completo' => 'Pase Completo',
-                                                'camisas' => 'Camisas',
-                                                'etiquetas' => 'Etiquetas'
+                                                'etiquetas' => 'Etiquetas',
+                                                'camisas' => 'Camisas'
                                              );
                                              foreach($articulos as $llave => $articulo){
                                                     echo $articulo . " " . $arreglo_articulos[$llave] ."<br>";

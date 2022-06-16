@@ -28,7 +28,8 @@
 <script src="js/sweetalert2.all.min.js"></script>
 
 <script src="js/admin-ajax.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-timepicker.min.js"></script>
 
 <!-- AdminLTE for demo purposes -->
 <script src="js/demo.js"></script>

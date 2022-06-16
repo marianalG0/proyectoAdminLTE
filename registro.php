@@ -3,7 +3,7 @@
 <section class="seccion contenedor">
   <h2>Registro de Usuarios</h2>
 
-  <form id="registro" class="registro" action="pagar.php" method="post">
+  <form id="registro" class="registro" action="pagar.php" method="POST">
 
     <div id="datos_usuario" class="registro caja clearfix">
       <div class="campo">

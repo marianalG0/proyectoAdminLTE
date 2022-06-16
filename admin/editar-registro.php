@@ -41,7 +41,7 @@ include_once 'templates/navegacion.php';
 
                         ?>
                         <!-- form start -->
-                        <form class="editar-registrado" role="form" name="guardar-registro" id="guardar-registro" method="post" action="modelo-registrado.php">
+                        <form class="editar-registrado" role="form" name="guardar-registro" id="guardar-registro" method="POST" action="modelo-registrado.php">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="nombre_registrado">Nombre:</label>
@@ -122,7 +122,7 @@ include_once 'templates/navegacion.php';
                                                     <div class="orden">
                                                         <label for="pase_dosdias">Boletos deseados:</label>
 
-                                                        <input value="<?php echo $boletos['pase_2dias']['cantidad'];?>" type="number" class="form-control" min="0" id="pase_dosdias" size="3" name="boletos[2dias][cantidad]" placeholder="0">
+                                                        <input value="<?php echo $boletos['pase_2dias']['cantidad']; ?>" type="number" class="form-control" min="0" id="pase_dosdias" size="3" name="boletos[2dias][cantidad]" placeholder="0">
                                                         <input type="hidden" value="45" name="boletos[2dias][precio]">
 
 

@@ -23,7 +23,7 @@ $id_registro = $POST['id_registro'];
 
      if($_POST['registro'] == 'nuevo'){ //DEBERÍA SER if(isset($_POST['registro'] == 'nuevo'))
         try{
-               $stmt = $conn->prepare('INSERT INTO registrados (nombre_registrado, apellido_registrado, email_registrado, , pases_articulos, talleres_registrados, regalo, total_pagado, pagado) VALUES (?, ?, ?, NOW(), ?, ?, ?, ?, 1');
+               $stmt = $conn->prepare('INSERT INTO registrados (nombre_registrado, apellido_registrado, email_registrado, , pases_articulos, talleres_registrados, regalo, total_pagado, pagado) VALUES (?, ?, ?, NOW(), ?, ?, ?, ?, 1)');
                $stmt->bind_param("sssssis", $nombre, $apellido, $email, $pedido, $registro_eventos, $regalo, $total);
                $stmt->execute();
                $id_insertado = $stmt->insert_id;

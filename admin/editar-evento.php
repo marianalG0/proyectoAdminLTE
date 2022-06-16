@@ -42,7 +42,7 @@ else:
     
                         ?>
                         <!-- form start -->
-                        <form role="form" name="guardar-registro" id="guardar-registro" method="post" action="modelo-evento.php"> <!-- AGREGADO POR ASCC video2folder81-->
+                        <form role="form" name="guardar-registro" id="guardar-registro" method="POST" action="modelo-evento.php"> <!-- AGREGADO POR ASCC video2folder81-->
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="usuario">Titulo Evento:</label>

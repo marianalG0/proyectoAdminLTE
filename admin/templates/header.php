@@ -19,7 +19,9 @@
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/timepicker.css">
   <link rel="stylesheet" href="css/fontawesome-iconpicker.min.css">
-  <link rel="stylesheet" href="css/datepicker.css">
+  <!--<link rel="stylesheet" href="css/datepicker.css">-->
+  <link rel="stylesheet" href="css/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
   
 
   <!-- Theme style -->

@@ -44,12 +44,12 @@ $(document).ready(function () {
     // Date picker
     // Asi estaba en el video
     //$('#fecha').datepicker({
-    //  autoclose: true
+     //autoclose: true
     //});
 
-    $('#datepicker').datepicker({
-      autoclose: true
-    });
+     $('#datepicker').datepicker({
+       autoclose: true
+     });
 
     $('#select2').select2();
 

@@ -29,7 +29,7 @@
                     </div>
                     <div class="box-body">
                         <!-- form start -->
-                        <form role="form" name="guardar-registro" id="guardar-registro" method="post" action="modelo-admin.php">
+                        <form role="form" name="guardar-registro" id="guardar-registro" method="POST" action="modelo-admin.php">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="usuario">Usuario:</label>

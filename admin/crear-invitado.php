@@ -29,7 +29,7 @@
                     </div>
                     <div class="box-body">
                         <!-- form start -->
-                        <form role="form" name="guardar-registro" id="guardar-registro-archivo" method="post" action="modelo-invitado.php" enctype="multipart/form-data">
+                        <form role="form" name="guardar-registro" id="guardar-registro-archivo" method="POST" action="modelo-invitado.php" enctype="multipart/form-data">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="nombre_invitado">Nombre:</label>
