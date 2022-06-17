@@ -44,12 +44,12 @@ $(document).ready(function () {
     // Date picker
     // Asi estaba en el video
     //$('#fecha').datepicker({
-    //  autoclose: true
+     //autoclose: true
     //});
 
-    $('#datepicker').datepicker({
-      autoclose: true
-    });
+     $('#datepicker').datepicker({
+       autoclose: true
+     });
 
     $('#select2').select2();
 
@@ -58,5 +58,23 @@ $(document).ready(function () {
     });
 
     $('#icono').iconpicker();
+
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_flat-blue',
+      radioClass   : 'iradio_flat-blue'
+    });
+
+    $.getJSON('servicio-registrados.php', function(data) {
+      var line = new Morris.Line({
+        element: 'grafica-registros',
+        resize: true,
+        data: data,
+        xkey: 'fecha',
+        ykeys: ['cantidad'],
+        labels: ['Item 1'],
+        lineColors: ['#3c8dbc'],
+        hideHover: 'auto'
+      });
+    });
 
   }) //final

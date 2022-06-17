@@ -18,8 +18,8 @@
         
    
            try{
-               $stmt = $conn->prepare("INSERT INTO eventos (nombre_evento, fecha_evento, hora_evento, id_cat_evento, id_inv) VALUES (?, ?, ?, ?, ? )");
-               $stmt->bind_param("sssii", $titulo, $fecha_formateada, $hora, $categoria_id, $invitado_id );
+               $stmt = $conn->prepare('INSERT INTO eventos (nombre_evento, fecha_evento, hora_evento, id_cat_evento, id_inv) VALUES (?, ?, ?, ?, ? )');
+               $stmt->bind_param("sssii", $titulo, $fecha_formateada, $hora_formateada, $categoria_id, $invitado_id );
                $stmt->execute();
                $id_insertado = $stmt->insert_id;
                if($stmt->affected_rows){

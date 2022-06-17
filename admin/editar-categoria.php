@@ -41,7 +41,7 @@ if(!filter_var($id, FILTER_VALIDATE_INT)){
 
                         ?>
                         <!-- form start -->
-                        <form role="form" name="guardar-registro" id="guardar-registro" method="post" action="modelo-categoria.php">
+                        <form role="form" name="guardar-registro" id="guardar-registro" method="POST" action="modelo-categoria.php">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="usuario">Nombre:</label>

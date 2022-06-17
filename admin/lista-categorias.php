@@ -53,7 +53,7 @@
                  
 
                  <tr>
-                    <td><?php echo $categoria['cat_evento']; ?><td/>
+                    <td><?php echo $categoria['cat_evento']; ?></td>
                     <td><i class="fa <?php echo $categoria['icono']; ?>"></i></td>
                     <td>
                       <a href="editar-categoria.php?id=<?php echo $categoria['id_categoria']; ?>" class="btn bg-orange btn-flat margin">

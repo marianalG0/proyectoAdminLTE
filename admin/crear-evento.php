@@ -29,10 +29,10 @@
                     </div>
                     <div class="box-body">
                         <!-- form start -->
-                        <form role="form" name="guardar-registro" id="guardar-registro" method="post" action="modelo-evento.php"> <!-- AGREGADO POR ASCC video2folder81-->
+                        <form role="form" name="guardar-registro" id="guardar-registro" method="POST" action="modelo-evento.php"> <!-- AGREGADO POR ASCC video2folder81-->
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="usuario">Titulo Evento:</label>
+                                    <label for="titulo_evento">Titulo Evento:</label>
                                     <input type="text" class="form-control" id="titulo_evento" name="titulo_evento" placeholder="Titulo del Evento">
                                 </div>
                                 
@@ -77,7 +77,7 @@
                                 <label>Hora</label>
 
                                 <div class="input-group">
-                                <input type="text" class="form-control datetimepicker" name="hora_evento">
+                                <input type="text" class="form-control timepicker" name="hora_evento">
 
                                     <div class="input-group-addon">
                                         <i class="far fa-clock"></i>
