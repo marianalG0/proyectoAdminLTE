@@ -59,7 +59,7 @@
                       <a href="editar-categoria.php?id=<?php echo $categoria['id_categoria']; ?>" class="btn bg-orange btn-flat margin">
                       <i class="fa fa-pencil"></i>
                     </a>
-                      <a href="" data-id="<?php echo $categoria['id_categoria']; ?>" data-tipo="categoria" class="btn bg-maroon bnt-flat margin borrar_registro">
+                      <a href="#" data-id="<?php echo $categoria['id_categoria']; ?>" data-tipo="categoria" class="btn bg-maroon bnt-flat margin borrar_registro">
                       <i class="fa fa-trash"></i>
                     </a>
                     </td>

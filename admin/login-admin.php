@@ -17,6 +17,7 @@ if(isset($_POST['login-admin'])) {
                        $_SESSION['usuario'] = $usuario_admin;
                        $_SESSION['nombre'] = $nombre_admin;
                        $_SESSION['nivel'] = $nivel;
+                       $_SESSION['id'] = $id_admin;
                        $respuesta = array(
                         'respuesta' => 'exitoso',
                         'usuario' => $nombre_admin

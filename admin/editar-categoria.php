@@ -32,7 +32,7 @@ if(!filter_var($id, FILTER_VALIDATE_INT)){
                         <h3 class="box-title">Editar Categoria</h3>
 
                     </div>
-                    <div class="box-body">
+                    <!--<div class="box-body">-->
                         <?php
                         $sql = "SELECT * FROM categoria_evento WHERE id_categoria = $id ";
                         $resultado = $conn->query($sql);
@@ -45,7 +45,7 @@ if(!filter_var($id, FILTER_VALIDATE_INT)){
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="usuario">Nombre:</label>
-                                    <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria" placeholder="Categoria" value="<?php echo $categoria['cat_evento']; ?>">
+                                    <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria" placeholder="Categoria" value="<?php echo $categoria['cat_evento'];?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="">Icono:</label>
@@ -53,7 +53,7 @@ if(!filter_var($id, FILTER_VALIDATE_INT)){
                                         <div class="input-group-addon">
                                             <i class="fa fa-address-book"></i>
                                         </div>
-                                        <input type="text" id="icono" name="icono" class="form-control pull-right" placeholder="fa-icon" value="<?php echo $categoria['icono']; ?>">
+                                        <input type="text" id="icono" name="icono" class="form-control pull-right" placeholder="fa-icon" value="<?php echo $categoria['icono'];?>">
                                     </div>
                                 </div>
                             </div>
@@ -61,14 +61,14 @@ if(!filter_var($id, FILTER_VALIDATE_INT)){
 
                             <div class="box-footer">
                               <input type="hidden" name="registro" value="actualizar">
-                              <input type="hidden" name="id_registro" value="<?php echo $id; ?>">
+                              <input type="hidden" name="id_registro" value="<?php echo $id;?>">
                                 <button type="submit" class="btn btn-primary" id="crear_registro">Añadir</button>
                             </div>
                         </form>
 
                     </div>
                     <!-- /.box-body -->
-                </div>
+                <!--</div>-->
                 <!-- /.box -->
 
             </section>
