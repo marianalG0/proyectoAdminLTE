@@ -141,7 +141,8 @@ include_once 'templates/navegacion.php';
                                             while ($eventos = $resultado->fetch_assoc()) {
                                                 $fecha = $eventos['fecha_evento'];
                                                 setlocale(LC_ALL, 'es_ES');
-                                                $dia_semana = strftime("%A", strtotime($fecha));
+                                                // $dia_semana = strftime("%A", strtotime($fecha));
+                                                $dia_semana = date("Y", strtotime($fecha));
 
                                                 $categoria = $eventos['cat_evento'];
                                                 $dia = array(

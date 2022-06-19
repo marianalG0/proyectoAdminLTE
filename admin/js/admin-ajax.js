@@ -1,7 +1,11 @@
 $(document).ready(function(){
     $('#guardar-registro').on('submit', function(e){
         e.preventDefault();
-
+        swal(
+            'Correcto!',
+            'Se guardó correctamente, para recargar haga CTRL + R',
+            'success'
+          )
         var datos = $(this).serializeArray();
 
         //Creamos el llamado ajax
@@ -33,7 +37,11 @@ $(document).ready(function(){
     // Se ejecuta cuando hay un archivo
         $('#guardar-registro-archivo').on('submit', function(e){
             e.preventDefault();
-    
+            swal(
+                'Correcto!',
+                'Se guardó correctamente, para recargar haga CTRL + R',
+                'success'
+              )
             var datos = new FormData(this);
     
             //Creamos el llamado ajax
@@ -93,6 +101,11 @@ $(document).ready(function(){
                 },
                 url: 'modelo-'+tipo+'.php',
                 success: function(data){
+                    swal(
+                        'Eliminado!',
+                        'Registro Eliminado, haga CTRL + R para recargar',
+                        'success'
+                    )
                     console.log(data);
                     var resultado = JSON.parse(data);
                     if(resultado.respuesta == 'exito'){

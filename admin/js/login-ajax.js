@@ -12,6 +12,11 @@ $(document).ready(function(){
             url: $(this).attr('action'),
             dataType: 'json',
             success: function(data){
+                swal(
+                    'Login Correcto',
+                    'Bienvenid@ !! ',
+                    'success'
+                )
                 console.log(data);
                 var resultado = data;
                 if(resultado.respuesta == 'exitoso') {
