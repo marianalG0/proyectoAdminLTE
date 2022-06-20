@@ -8,7 +8,7 @@ if(isset($_POST['login-admin'])) {
         $stmt = $conn->prepare("SELECT * FROM admins WHERE usuario = ?;");
         $stmt->bind_param("s", $usuario);
         $stmt->execute();
-        $stmt->bind_result($id_admin, $usuario_admin, $nombre_admin, $password_admin);
+        $stmt->bind_result($id_admin, $usuario_admin, $nombre_admin, $password_admin, $editado, $nivel);
         if($stmt->affected_rows) {
             $existe = $stmt->fetch();
             if($existe) {

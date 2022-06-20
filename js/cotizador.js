@@ -36,14 +36,14 @@
       var etiquetas = document.getElementById('etiquetas');
   
       //Inicia modif ASCC video3folder72
-      botonRegistro.disabled= true;
+      botonRegistro.disabled = true;
   
       if(document.getElementById('calcular')) {
   
       calcular.addEventListener('click', calcularMontos);
-      pase_dia.addEventListener('input', mostrarDias);
-      pase_dosdias.addEventListener('input', mostrarDias);
-      pase_completo.addEventListener('input', mostrarDias);
+      pase_dia.addEventListener('blur', mostrarDias);
+      pase_dosdias.addEventListener('blur', mostrarDias);
+      pase_completo.addEventListener('blur', mostrarDias);
   
       nombre.addEventListener('blur', validarCampos);
       apellido.addEventListener('blur', validarCampos);
